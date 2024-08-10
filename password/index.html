@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:black" id="headline">Password Strength Analyzer</h1>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <button id="toggle-password" class="toggle-password">Show</button>
+            <button id="copy-password" class="toggle-password">Copy</button>
+            <button id="generate-password" class="toggle-password">Generate</button>
+        </div>
+        <div id="strength-bar" class="strength-bar">
+            <div id="strength-meter" class="strength-meter"></div>
+        </div>
+        <p id="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="generate-password.js"></script>
+    <p class="card">- At least one uppercase letter.<br>
+    - At least two different special characters.<br>
+    - Password length must be between 8 and 12 characters.<br>
+    - At least one lowercase letter.<br>
+    - At least one number.</p>
+
+</body>
+<footer>
+<center><p id="ff">Developed by Jerose Browny</p></center>
+</footer>
+</html>
